@@ -12,7 +12,7 @@ On a subsequent request if the cache is missing, the original ajax call will be 
 
 Include script *after* the jQuery library (unless you are packaging scripts somehow else):
 
-    <script src="/path/to/jquery-ajax-session-storage-cache.js"></script>
+    <script src="/path/to/jquery.ajax-session-storage-cache.js"></script>
 
 == Usage
 
@@ -45,7 +45,7 @@ An object passed to jQuery's standard $.ajax method.  See http://http://api.jque
 
 == Development
 
-- Source hosted at {GitHub}[https://github.com/alexfarrill/jquery-ajax-session-storage-cache.js]
+- Source hosted at {GitHub}[https://github.com/alexfarrill/jquery-ajax-session-storage-cache]
 
 == Author
 
