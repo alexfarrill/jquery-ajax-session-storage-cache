@@ -8,6 +8,8 @@ On a subsequent request if the cache still exists, the "success" callback you sp
 
 On a subsequent request if the cache is missing, the original ajax call will be made and response cached again.
 
+The object's representation in the sessionStorage object is a JSON string.  For this reason, a JSON library that has methods "JSON.stringify" and "JSON.parse" must be included before loading.  Works well with Douglas Crockford's json2.js (https://github.com/douglascrockford/JSON-js).
+
 == Installation
 
 Include script *after* the jQuery library (unless you are packaging scripts somehow else):
