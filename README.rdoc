@@ -53,9 +53,13 @@ Namespaces the keys so you don't have collision across applications, environment
     
 == Global Options
 
-  namespace: see above
+  namespace: 
   
-  skip_cache: see above
+see above
+  
+  skip_cache: 
+  
+see above
   
   debug: true or false
 
