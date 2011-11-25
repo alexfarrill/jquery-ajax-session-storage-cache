@@ -40,6 +40,32 @@ Default: 5
     ajax_options: { url: "/twitter.js", success: function(data) { $("#tweets").html(data); } }
 
 An object passed to jQuery's standard $.ajax method.  See http://http://api.jquery.com/jQuery.ajax/
+  
+    skip_cache: true or false
+    
+If true, Ajax request will happen each time.  Useful e.g. if there is some subset of users (like admin users) who should never hit cache.  Also a global option.
+
+    namespace: "my-app"
+    
+Namespaces the keys so you don't have collision across applications, environments, deployments, etc.  Also a global option.
+    
+== Global Options
+
+  namespace: see above
+  
+  skip_cache: see above
+  
+  debug: true or false
+
+Logs to the console object
+  
+  e.g.
+  
+  $.AjaxSessionStorageCache.options = {
+    namespace: "development-myapp-deploy5859",
+    debug: /^(development|dev_cache)$/.test(App.env),
+    skip_cache: App.env === "development" || /admin=true/.test(document.cookie)
+  };
 
 == Changelog
 
