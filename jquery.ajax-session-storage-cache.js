@@ -91,7 +91,9 @@
   }
   
   $.AjaxSessionStorageCache.prototype.setSessionStorageCache = function(value) {
-    sessionStorage.setItem(this.key, value);
+    if (this.supportsSessionStorage()) {
+      sessionStorage.setItem(this.key, value);
+    }
   }
   
   $.ajax_session_storage_cache = function(options) {
