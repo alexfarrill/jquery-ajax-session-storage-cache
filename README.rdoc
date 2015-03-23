@@ -19,7 +19,7 @@ Include script *after* the jQuery library (unless you are packaging scripts some
 == Usage
 
   $.ajax_session_storage_cache({
-    cookie_name: "last_tweet",
+    key: "last_tweet",
     minutes_to_expiration: 60,
     ajax_options: {
       url: "/twitter.js",
